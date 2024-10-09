@@ -1,2 +1,2 @@
-def cake():
-    pass
+def cake(available, recipe):
+    return 0
