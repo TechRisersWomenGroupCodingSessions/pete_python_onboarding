@@ -9,3 +9,8 @@ def test_returns_0_if_no_ingredients_available():
     assert max_cakes == 0
 
 # STEP 2: now it's time to write your own tests.
+def test_returns_2_cakes_if_double_apples():
+    available = {"apples": 6}
+    recipe = {"apples": 3}
+    max_cakes = cake(available, recipe)
+    assert max_cakes == 2
