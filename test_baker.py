@@ -14,3 +14,11 @@ def test_returns_2_cakes_if_double_apples():
     recipe = {"apples": 3}
     max_cakes = cake(available, recipe)
     assert max_cakes == 2
+
+def test_returns_2_full_cakes():
+    available =  {"flour": 1200, "sugar": 1200, "eggs": 5, "milk": 200}
+    recipe = {"flour": 500, "sugar": 200, "eggs": 1}
+    max_cakes = cake(available, recipe)
+    assert max_cakes == 2
+
+
