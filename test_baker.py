@@ -21,4 +21,10 @@ def test_returns_2_full_cakes():
     max_cakes = cake(available, recipe)
     assert max_cakes == 2
 
+# def test_returns_0_if_incomplete_ingredients():
+#     available =  {"sugar": 500, "flour": 2000, "milk": 2000}
+#     recipe = {"apples": 3, "flour": 300, "sugar": 150, "milk": 100, "oil": 100}
+#     max_cakes = cake(available, recipe)
+#     assert max_cakes == 0
+
 
