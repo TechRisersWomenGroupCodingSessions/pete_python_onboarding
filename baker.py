@@ -8,6 +8,8 @@ def cake(available, recipe):
             count_of_ingredient_available = available.get(ingredient)
             count_of_ingredient_in_recipe = recipe.get(ingredient)
             cake_counts.append(count_of_ingredient_available//count_of_ingredient_in_recipe)
+        else:
+            cake_counts.append(0)
 
     if cake_counts:
         return_value = min(cake_counts)
